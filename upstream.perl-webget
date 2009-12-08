@@ -1,0 +1,2 @@
+tag1: shed
+  http://packages.debian.org/unstable/shed pregexp:tar.gz file:shed_1.15.orig.tar.gz new: x:

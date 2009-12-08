@@ -1,0 +1,7 @@
+sdesc: "A simple hex editor with a nano-style interface"
+ldesc: "An easy application for viewing and editing files in hex,
+octal, binary, or ascii text using ncurses. The interface is inspired by
+pico, another ncurses based text editor."
+category: Editors
+requires: cygwin libncurses9
+
