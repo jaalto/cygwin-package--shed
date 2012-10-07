@@ -9,8 +9,8 @@ Content-Transfer-Encoding: 8bit
 
 Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 ---
- shed.c |    2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ shed.c |    9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
 
 --- a/shed.c
 +++ b/shed.c
@@ -23,3 +23,31 @@ Signed-off-by: Jari Aalto <jari.aalto@cante.net>
  #include <signal.h>     /* signal     */
  #include <string.h>     /* strcmp etc */
  #include <stdlib.h>     /* exit       */
+@@ -72,6 +72,7 @@ int  redraw_key_help(int onlykeyhelp);
+ int  dump(char *dumpfile);
+ 
+ /* globals */
++WINDOW *window;
+ char   *filename;
+ FILE   *f                = NULL;
+ off_t  len               = 0;                               /* file length */
+@@ -336,7 +337,7 @@ int main(int argc, char **argv) {
+ 
+   /* init ncurses */
+   signal(SIGINT,ctrlc);
+-  initscr();
++  window = initscr();
+   keypad(stdscr,TRUE);
+   cbreak();
+   noecho();
+@@ -407,8 +408,8 @@ int mainloop() {
+           case 8:   /* ^H */
+             if(strlen(reply)) {
+               reply[strlen(reply)-1] = 0;
+-              mvaddch(stdscr->_cury,stdscr->_curx-1,' ');
+-              move(stdscr->_cury,stdscr->_curx-1);
++              mvaddch( getcury(window), getcurx(window)-1,' ');
++              move( getcury(window), getcurx(window)-1);
+             }
+             break;
+           default:
