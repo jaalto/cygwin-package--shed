@@ -8,11 +8,12 @@ ascii text using ncurses. The interface is inspired by pico, another
 ncurses based text editor.
 
 Runtime requirements:
-  cygwin
   libncurses9
 
 Build requirements:
-  cygwin
+  automake
+  autoconf
+  quilt
   libncurses-devel
 
 Canonical homepage:
@@ -61,7 +62,7 @@ Files included in the binary distribution:
 Port Notes:
 
 ----- version 1.15-1 -----
-- Initial release 2009-12-08 Jari Aalto
+- Initial release 2012-10-07 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2009 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2012 Jari Aalto; Licensed under GPL v2 or later
