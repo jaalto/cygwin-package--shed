@@ -1,0 +1,25 @@
+From 30c926481996b8acf2bb4069e26fef95882abd7f Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Sun, 7 Oct 2012 11:06:08 +0300
+Subject: [PATCH] shed.c: ncurses
+Organization: Private
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ shed.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/shed.c
++++ b/shed.c
+@@ -32,7 +32,7 @@ Foundation, Inc., 59 Temple Place, Suite
+ 
+ /* includes */
+ #include <stdio.h>      /* fprintf    */
+-#include <ncurses.h>    /* ncurses    */
++#include <ncurses/ncurses.h>    /* ncurses    */
+ #include <signal.h>     /* signal     */
+ #include <string.h>     /* strcmp etc */
+ #include <stdlib.h>     /* exit       */
