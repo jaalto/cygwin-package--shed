@@ -17,7 +17,7 @@ Build requirements:
   libncurses-devel
 
 Canonical homepage:
-  http://freshmeat.net/projects/shed
+  http://freecode.com/projects/shed
   http://www.sourceforge.net/projects/shed
   http://packages.debian.org/shed
 
@@ -34,7 +34,7 @@ Forum / Wiki:
 IRC channel:
 
 Upstream contact:
-  Maintainer: Alex Sisson <alexs@cyberspace.org>
+  Maintainer: Alex Sisson <alexs@cyberspace.org>, <alexsisson@users.sf.net>
   Bugs: https://sourceforge.net/tracker/?group_id=21862&atid=374571
 
 License:
