@@ -3,4 +3,4 @@ ldesc: "An easy application for viewing and editing files in hex,
 octal, binary, or ascii text using ncurses. The interface is inspired by
 pico, another ncurses based text editor."
 category: Editors
-requires: libncurses9
+requires: libncurses10

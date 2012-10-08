@@ -8,7 +8,7 @@ ascii text using ncurses. The interface is inspired by pico, another
 ncurses based text editor.
 
 Runtime requirements:
-  libncurses9
+  libncurses10
 
 Build requirements:
   automake
