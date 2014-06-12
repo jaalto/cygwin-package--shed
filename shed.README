@@ -8,13 +8,13 @@ ascii text using ncurses. The interface is inspired by pico, another
 ncurses based text editor.
 
 Runtime requirements:
-  libncurses10
+  libncursesw10
 
 Build requirements:
   automake
   autoconf
   quilt
-  libncurses-devel
+  libncursesw-devel
 
 Canonical homepage:
   http://freecode.com/projects/shed
