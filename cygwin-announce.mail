@@ -1,5 +1,5 @@
 To: cygwin-announce@cygwin.com
-Subject: New package: shed 1.15-1 -- A simple hex editor with nano-style interface
+Subject: updated: shed 1.15-2 -- A simple hex editor with nano-style interface
 --text follows this line--
 
 PACKAGE DESCRIPTION
@@ -20,6 +20,7 @@ See homepage for release notes.
 INSTALL OR UPGRADE NOTES
 ========================
 
+Cygwin: compiled with libncursesw10
 Standard install.
 
 CYGWIN INSTALLATION INFORMATION

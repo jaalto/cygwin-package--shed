@@ -1,0 +1,21 @@
+# Just before make(1) is about to be run, this file is sourced
+# CYGBUILD_CC="gcc"
+# CYGBUILD_CXX="g++"
+# CYGBUILD_CXXLAGS="-O2 -ggdb -pipe -Werror=implicit-function-declaration"
+#
+# set to -Wl,--no-undefined for libraries
+# CYGBUILD_LDFLAGS=""
+#
+# CYGBUILD_MAKEFLAGS="all xall"
+
+# "This NCURSES_OPAQUE is nasty. Unless you define NCURSES_OPAQUE as 0
+# before including curses.h, WINDOW struct and a lot of important
+# definitions are left out, thus making most source code using curses
+# helpless.
+
+# See http://bugs.python.org/issue14438
+# the following define is necessary for Cygwin; without it, the
+# Cygwin-supplied ncurses.h sets NCURSES_OPAQUE to 1, and then Python
+# can't get at the WINDOW flags field.
+
+CYGBUILD_CFLAGS="-DNCURSES_INTERNALS"

@@ -62,8 +62,12 @@ Files included in the binary distribution:
 
 Port Notes:
 
+----- version 1.15-2 -----
+- New release 2015-02-12 Jari Aalto
+- Compile with libncursesw10. Requires -DNCURSES_INTERNALS in x86.
+
 ----- version 1.15-1 -----
 - Initial release 2012-10-07 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2012 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2012-2015 Jari Aalto; Licensed under GPL v2 or later
